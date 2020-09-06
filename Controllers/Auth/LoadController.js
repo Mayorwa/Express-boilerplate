@@ -150,24 +150,3 @@ exports.verify = catchAsync(async (req, res, next) => {
     message: 'User account has been verified!',
   });
 });
-
-exports.saveEmail = catchAsync(async (req, res) => {
-  mailchimp.post('/lists/0c74d3d822/members', {
-    email_address : req.body.email,
-    status : 'subscribed'
-  })
-  .then(function(results) {
-
-    res.status(200).json({
-      status: 'success',
-      message: 'You has successfully subscribed to our NewsLetter!',
-      results
-    });
-  })
-  .catch(function (err) {
-    res.status(500).json({
-      status: 'failed',
-      err
-    });
-  })
-});

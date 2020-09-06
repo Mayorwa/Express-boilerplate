@@ -10,7 +10,6 @@ router.get('/logout', authController.logout);
 router.get('/verify/:token', authController.verify);
 router.post('/forgotPassword', authController.forgotPassword);
 router.patch('/resetPassword/:token', authController.resetPassword);
-router.post('/newsletter', authController.saveEmail);
 //For Admin Creation
 router.get(
   '/getUser',
