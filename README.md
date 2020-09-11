@@ -1,10 +1,6 @@
 The Node(express) Version of Boiler Plate API 
 1. git clone repo
-2. Create new branch
 2. npm install
-3. Make changes, commit and push.
-4. Create PR to dev
-5. 😉everyone is ok.
-
-
-🎉Congrats you just contributed to the repo
+3. create config.env file using existing example file(config.env.example)
+👋You are good to go
+Note: OOP version coming soon
